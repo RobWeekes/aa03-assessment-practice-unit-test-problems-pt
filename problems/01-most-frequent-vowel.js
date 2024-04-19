@@ -6,13 +6,21 @@ up the most in all the strings in the array.
 If there are no vowels at all, return an empty string "".
 
 Your function should also accept a `counter` parameter that will be an empty
-object by default.
+object by default.*/
 
-Each recursive step should count the vowels in the last string in the array
-and add them to the `counter`. Return the vowel with the greatest count in
-the `counter` object.
+function mostFrequentVowel(words, counter = {}) {
 
-Only the following will be considered as vowels: 'a', 'e', 'i', 'o', 'u'.
+    if(words.length == 0) {
+        return "";
+    }
+
+}
+
+// Each recursive step should count the vowels in the last string in the array
+// and add them to the `counter`. Return the vowel with the greatest count in
+// the `counter` object.
+
+// Only the following will be considered as vowels: 'a', 'e', 'i', 'o', 'u'.
 
 // words = ['apple', 'pear', 'melon', 'coconut', 'lime']
 // counter = {}
@@ -61,7 +69,7 @@ mostFrequentVowel(['dog', 'cow', 'pig', 'chicken']); // 'i' or 'o'
 
 const VOWELS = ['a', 'e', 'i', 'o', 'u'];
 const mostFrequentVowel = function (words, counter = {}) {
-  // Your code here 
+  // Your code here
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
