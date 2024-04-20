@@ -22,8 +22,41 @@ printAndPause([200, 800, 200, 800, 200, 800])
 ***********************************************************************/
 
 function printAndPause(nums) {
-  // Your code here 
+    // console.log(nums);
+
+    // base case with empty array
+    if(nums.length === 0) {
+        return;
+    }
+
+    // console.log(nums.length);   // comment out
+
+    // recursive case shorten array by 1 element
+
+    let number = nums.shift();
+    console.log(number);
+
+    setTimeout(() => {
+    // console.log(number);
+    return printAndPause(nums)
+    }, number);
+
 }
+
+// printAndPause([200, 800, 200, 800, 200, 800]);
+// 200
+// // pause 200ms
+// 800
+// // pause 800ms
+// 200
+// // pause 200ms
+// 800
+// // pause 800ms
+// 200
+// // pause 200ms
+// 800
+// // pause 800ms
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
