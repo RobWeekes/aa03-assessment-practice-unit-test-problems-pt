@@ -21,10 +21,7 @@ printAndPause([200, 800, 200, 800, 200, 800])
 
 ***********************************************************************/
 
-function printAndPause(nums) {
-    // for(let i = 0; i < nums.length; i++) {}    // use recursive approach, not iterative
-    // console.log(nums);
-
+function printAndPause(nums) {    // use recursive approach, not iterative
     // base case --
     if(nums.length === 0) return;
 
@@ -37,6 +34,8 @@ function printAndPause(nums) {
         return printAndPause(nums);
     }, first)
 }
+
+// function call MUST be commented out to pass asynch test, (good practice in general!)
 
 // printAndPause([200, 800, 200, 800, 200, 800]);
 // 200

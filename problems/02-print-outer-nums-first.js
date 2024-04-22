@@ -49,7 +49,7 @@ printOuterNumsFirst([21, 4, 6, 93, 78]);
     printOuterNumsFirst(nums);
   }
 
-  // printOuterNumsFirst([1, 2, 3, 4, 5, 6, 7, 8]);
+  printOuterNumsFirst([1, 2, 3, 4, 5, 6, 7, 8]);
   // 1
   // 8
   // 2
@@ -59,7 +59,7 @@ printOuterNumsFirst([21, 4, 6, 93, 78]);
   // 4
   // 5
 
-  // printOuterNumsFirst([21, 4, 6, 93, 78]);
+  printOuterNumsFirst([21, 4, 6, 93, 78]);
   // 78
   // 21
   // 93

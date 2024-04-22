@@ -63,21 +63,21 @@ function eliminateType(arr) {
 }
 
 // slow way, manual for loop --
-function eliminateType(arr) {
-    return function(type) {
-    let result = [];
+// function eliminateType(arr) {
+//     return function(type) {
+//     let result = [];
 
-        for(let i = 0; i < arr.length; i++) {
-            let ele = arr[i];
-            // console.log(ele);
-            if(typeof ele !== type) {
-                result.push(ele);
-                // console.log(result);
-            }
-        }
-        return result;
-    }
-}
+//         for(let i = 0; i < arr.length; i++) {
+//             let ele = arr[i];
+//             // console.log(ele);
+//             if(typeof ele !== type) {
+//                 result.push(ele);
+//                 // console.log(result);
+//             }
+//         }
+//         return result;
+//     }
+// }
 
     // return a copy of the input array with all elements
     // of the specified type removed.
@@ -88,13 +88,13 @@ function eliminateType(arr) {
 // The return function should return a copy of the input array with all elements
 // of the specified type removed.
 
-// const smallEliminate = eliminateType([1, 'one', 2, 'two', 3, 'three']);
-// console.log(smallEliminate('number')); // ['one', 'two', 'three']
-// console.log(smallEliminate('string')); // [1, 2, 3]
+const smallEliminate = eliminateType([1, 'one', 2, 'two', 3, 'three']);
+console.log(smallEliminate('number')); // ['one', 'two', 'three']
+console.log(smallEliminate('string')); // [1, 2, 3]
 
-// const eliminate = eliminateType([2, undefined, 'world', { color: 'red' }, true, 3, [4, 5], 'hello', false]);
-// console.log(eliminate('number')); // [undefined, 'world', { color: 'red' }, true, [4, 5], 'hello', false]
-// console.log(eliminate('object')); // [2, undefined, 'world', true, 3, 'hello', false]
+const eliminate = eliminateType([2, undefined, 'world', { color: 'red' }, true, 3, [4, 5], 'hello', false]);
+console.log(eliminate('number')); // [undefined, 'world', { color: 'red' }, true, [4, 5], 'hello', false]
+console.log(eliminate('object')); // [2, undefined, 'world', true, 3, 'hello', false]
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
