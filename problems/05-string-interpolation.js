@@ -4,11 +4,17 @@ Write a function makeAnimalSound(animal, sound) that accepts two strings. Use
 examples for more information.
 
 Examples:
-console.log(makeAnimalSound("cow", "moo")); // => "cow goes moo!"
-console.log(makeAnimalSound("DUCK", "QUACK")); // => "DUCK goes QUACK!"
+
 ***********************************************************************/
 
-// Your code here 
+
+let makeAnimalSound = (animal, sound) => {
+    return `${animal} goes ${sound}!`;
+}
+
+console.log(makeAnimalSound("cow", "moo")); // => "cow goes moo!"
+console.log(makeAnimalSound("DUCK", "QUACK")); // => "DUCK goes QUACK!"
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
